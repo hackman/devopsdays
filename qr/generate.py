@@ -158,8 +158,8 @@ def main(args):
 	vcards_num = len(vcards)
 	print(f"Found: %d vcards" % vcards_num)
 
-	# Register the Arial font
-	font_path = "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf"  # Path to Arial font
+	# Register the font.
+	font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 	pdfmetrics.registerFont(TTFont(font_name, font_path))
 
 	# Create a canvas to draw the PDF
@@ -185,7 +185,8 @@ def main(args):
 	c.save()
 	print("Avery 5164 label PDF generated and saved as '{}'.".format(filename))
 
-font_name = "Arial"
+#font_name = "Arial"
+font_name = "DejaVu"
 font_size = 22
 
 if __name__ == "__main__":

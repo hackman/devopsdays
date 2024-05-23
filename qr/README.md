@@ -15,3 +15,9 @@ We have a few differences, between the CSV files of attendees and organizers.
 - In attendees we don't have type
 
 We also have a difference between the VCARD data for orga and attendees. The orga team has the type put in TITLE and also the ORG is hardcoded to DevOpsDays, while the attendees have DevOpsDays YEAR and no TITLE.
+
+
+# Installation
+On ubuntu you only need:
+
+ pip3 install qrcode reportlab

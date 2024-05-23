@@ -127,7 +127,7 @@ def generate_page(c, vcards, names):
 		x_centered = x - name_width / 2 + label_width / 2
 		
 		# Draw name at the top
-		c.drawString(x_centered, y + label_height - 68, names[i])
+		c.drawString(x_centered, y + label_height - 62, names[i])
 		
 		# Center the QR code in the label
 		qr_code_size = 2 * inch  # Size of the QR code
@@ -159,7 +159,7 @@ def main(args):
 	print(f"Found: %d vcards" % vcards_num)
 
 	# Register the font.
-	font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+	font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf"
 	pdfmetrics.registerFont(TTFont(font_name, font_path))
 
 	# Create a canvas to draw the PDF

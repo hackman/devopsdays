@@ -127,7 +127,7 @@ def generate_page(c, vcards, names):
 		x_centered = x - name_width / 2 + label_width / 2
 		
 		# Draw name at the top
-		c.drawString(x_centered, y + label_height - 60, names[i])
+		c.drawString(x_centered, y + label_height - 68, names[i])
 		
 		# Center the QR code in the label
 		qr_code_size = 2 * inch  # Size of the QR code
@@ -187,7 +187,7 @@ def main(args):
 
 #font_name = "Arial"
 font_name = "DejaVu"
-font_size = 22
+font_size = 19
 
 if __name__ == "__main__":
     main(sys.argv[1:])
